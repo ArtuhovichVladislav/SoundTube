@@ -1,4 +1,4 @@
-Website «SoundTube»
+﻿Website «SoundTube»
 Software Requirements Specification
 Document
 Version 1.0 Date: (26.09.2015)
@@ -31,9 +31,11 @@ Version 1.0 Date: (26.09.2015)
 
 3. SYSTEM REQUIREMENTS
   3.1 Functional Requirements
-  1. Full time working server
-  2. Supporting of many users in one time on the website
-  3. Working access to Youtube API
+    3.1.1 User should have possibility to listen to music and watch video clis from Youtube
+    3.1.2 User should have possibility to search video clips by style
+    3.1.3 User should have possibility to search video clips by name 
+    3.1.4 User should have possibility to explore popular music video clips
+    3.1.5 User should have possibility to control video playback
   
   3.2 Non-Functional Requirements
     3.2.1 Intuitive web interface (web site must have simple web interface to help user quickly access to needed info)
