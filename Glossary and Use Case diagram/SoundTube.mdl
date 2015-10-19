@@ -58,7 +58,7 @@
 	pageOverlap 	0.250000
 	clipIconLabels 	TRUE
 	autoResize 	TRUE
-	snapToGrid 	TRUE
+	snapToGrid 	FALSE
 	gridX      	0
 	gridY      	0
 	defaultFont 	(object Font
@@ -381,7 +381,7 @@
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	188
+		origin_y   	187
 		items      	(list diagram_item_list
 		    (object UseCaseView "Use Case View::Play/pause" @1
 			location   	(1398, 1249)
@@ -553,7 +553,7 @@
 			    location   	(161, 681)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	325
+			    max_width  	362
 			    justify    	0
 			    label      	"User")
 			icon       	"Actor"
@@ -628,7 +628,7 @@
 				supplier   	@5
 				vertices   	(list Points
 				    (479, 491)
-				    (740, 469))
+				    (742, 469))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$5" @13
 				Parent_View 	@11
@@ -640,7 +640,7 @@
 				supplier   	@7
 				vertices   	(list Points
 				    (479, 491)
-				    (218, 513))
+				    (218, 512))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$0" @14
 			location   	(440, 393)
@@ -668,7 +668,7 @@
 				supplier   	@6
 				vertices   	(list Points
 				    (440, 393)
-				    (663, 295))
+				    (531, 351))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$2" @16
 				Parent_View 	@14
@@ -680,7 +680,7 @@
 				supplier   	@7
 				vertices   	(list Points
 				    (440, 393)
-				    (218, 491))
+				    (218, 490))
 				line_style 	0)))
 		    (object ClassView "Class" "Use Case View::Youtube API" @17
 			ShowCompartmentStereotypes 	TRUE
@@ -702,7 +702,7 @@
 			    location   	(1539, 657)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	325
+			    max_width  	362
 			    justify    	0
 			    label      	"Youtube API")
 			icon       	"Actor"
@@ -749,7 +749,7 @@
 				supplier   	@4
 				vertices   	(list Points
 				    (1225, 603)
-				    (970, 693))
+				    (970, 691))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$15" @21
 			location   	(1220, 477)
@@ -777,7 +777,7 @@
 				supplier   	@17
 				vertices   	(list Points
 				    (1220, 477)
-				    (1480, 491))
+				    (1479, 490))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$17" @23
 				Parent_View 	@21
@@ -789,7 +789,7 @@
 				supplier   	@5
 				vertices   	(list Points
 				    (1220, 477)
-				    (960, 464))
+				    (960, 463))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$18" @24
 			location   	(1260, 379)
@@ -817,7 +817,7 @@
 				supplier   	@17
 				vertices   	(list Points
 				    (1260, 379)
-				    (1480, 471))
+				    (1478, 469))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$20" @26
 				Parent_View 	@24
@@ -829,7 +829,7 @@
 				supplier   	@6
 				vertices   	(list Points
 				    (1260, 379)
-				    (1040, 288))
+				    (1172, 341))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Control playback" @27
 			location   	(862, 1009)
@@ -882,7 +882,7 @@
 				supplier   	@27
 				vertices   	(list Points
 				    (498, 754)
-				    (778, 950))
+				    (781, 951))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$11" @30
 				Parent_View 	@28
@@ -922,7 +922,7 @@
 				supplier   	@17
 				vertices   	(list Points
 				    (1206, 744)
-				    (1480, 537))
+				    (1480, 536))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$23" @33
 				Parent_View 	@31
@@ -934,7 +934,7 @@
 				supplier   	@27
 				vertices   	(list Points
 				    (1206, 744)
-				    (932, 951))
+				    (933, 950))
 				line_style 	0)))
 		    (object DependencyView "" @34
 			font       	(object Font
@@ -974,7 +974,7 @@
 			client     	@27
 			supplier   	@2
 			vertices   	(list Points
-			    (863, 1172)
+			    (863, 1170)
 			    (864, 1338))
 			line_style 	0)
 		    (object DependencyView "" @36
@@ -1015,7 +1015,7 @@
 			client     	@27
 			supplier   	@1
 			vertices   	(list Points
-			    (1020, 1077)
+			    (1182, 1150)
 			    (1287, 1197))
 			line_style 	0)
 		    (object DependencyView "" @38
@@ -1056,8 +1056,8 @@
 			client     	@27
 			supplier   	@3
 			vertices   	(list Points
-			    (703, 1086)
-			    (489, 1189))
+			    (862, 1009)
+			    (381, 1246))
 			line_style 	0)))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"5612DAAC03DA"
@@ -1065,7 +1065,313 @@
 	global     	TRUE
 	subsystem  	"Component View"
 	quidu      	"5612DAAC03DC"
-	logical_models 	(list unit_reference_list)
+	logical_models 	(list unit_reference_list
+	    (object Mechanism @40
+		logical_models 	(list unit_reference_list
+		    (object Object "$UNNAMED$24"
+			quid       	"5624D3EA01F0"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5624D53F0273"
+				supplier   	"$UNNAMED$25"
+				quidu      	"5624D3FC0070")
+			    (object Link
+				quid       	"5624D63D01CA"
+				supplier   	"$UNNAMED$26"
+				quidu      	"5624D5E8036C"
+				messages   	(list Messages
+				    (object Message "Select music style"
+					quid       	"5624D63D01CB"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1"
+					ordinal    	0
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"5624D65C031A"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.1.1"
+					ordinal    	7
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Explore popular music button clicked"
+					quid       	"56255BC703A5"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"5"
+					ordinal    	8
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::User"
+			quidu      	"5612DB25035D"
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "$UNNAMED$25"
+			quid       	"5624D3FC0070"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5624D9FA0273"
+				supplier   	"$UNNAMED$27"
+				quidu      	"5624D7FA0137"
+				messages   	(list Messages
+				    (object Message "Request for common channel with selected music style"
+					quid       	"56255B050218"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"3"
+					ordinal    	3
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"56255B4C03BB"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"3.1"
+					ordinal    	4
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Request for getting popular channel videos"
+					quid       	"56255CB002C1"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"6"
+					ordinal    	11
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"56255CE00338"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"6.1"
+					ordinal    	12
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"56255EB0005E"
+				supplier   	"Yt Client"
+				quidu      	"5624D7FA0137"
+				messages   	(list Messages
+				    (object Message ""
+					quid       	"56255EB0005F"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"6.2"
+					ordinal    	20
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Request for searching common clip"
+					quid       	"56255EC20303"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"7.1.1.1"
+					ordinal    	19
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::Youtube API"
+			quidu      	"5612E216037B"
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "Main Page"
+			quid       	"5624D5E8036C"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5624D8E3008D"
+				supplier   	"$UNNAMED$28"
+				quidu      	"5624D730020A"
+				messages   	(list Messages
+				    (object Message "Send style name to Controller"
+					quid       	"5624D8E3008E"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1"
+					ordinal    	1
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"5624D9E403C3"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.1"
+					ordinal    	6
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Send action to Controller"
+					quid       	"56255BE60088"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"5.1"
+					ordinal    	9
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"56255CF20304"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.2"
+					ordinal    	14
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"56255D0D016F"
+				supplier   	"$UNNAMED$24"
+				quidu      	"5624D3EA01F0"
+				messages   	(list Messages
+				    (object Message ""
+					quid       	"56255D0D0170"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"5.2"
+					ordinal    	15
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"56255DC6036C"
+				supplier   	"$UNNAMED$24"
+				quidu      	"5624D3EA01F0"
+				messages   	(list Messages
+				    (object Message ""
+					quid       	"56255DC6036D"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"5.3"
+					ordinal    	23
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Enter clip name for searching"
+					quid       	"56255DCF03AE"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"7"
+					ordinal    	16
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "MainPageController"
+			quid       	"5624D730020A"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5624D80E0017"
+				supplier   	"Yt Client"
+				quidu      	"5624D7FA0137"
+				messages   	(list Messages
+				    (object Message "Send style name to Yt Client"
+					quid       	"56255A540349"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"2"
+					ordinal    	2
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"56255B6303C3"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"ToClientFromSupplier"
+					sequence   	"4"
+					ordinal    	5
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Send name to Yt Client"
+					quid       	"56255E9102AD"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"7.1.1"
+					ordinal    	18
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5624D9400394"
+				supplier   	"$UNNAMED$25"
+				quidu      	"5624D3FC0070")
+			    (object Link
+				quid       	"56255E6B00C4"
+				supplier   	"Main Page"
+				quidu      	"5624D5E8036C"
+				messages   	(list Messages
+				    (object Message ""
+					quid       	"56255E6B00C5"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"5.1.2"
+					ordinal    	22
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Send name to Controller"
+					quid       	"56255E720141"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"7.1"
+					ordinal    	17
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "Yt Client"
+			quid       	"5624D7FA0137"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"56255C11001D"
+				supplier   	"MainPageController"
+				quidu      	"5624D730020A"
+				messages   	(list Messages
+				    (object Message "Request for getting popular channel videos"
+					quid       	"56255C16022A"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"5.1.1"
+					ordinal    	10
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"56255C3E0189"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"5.1.1.1"
+					ordinal    	13
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message ""
+					quid       	"56255E8600B9"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"5.1.1.2"
+					ordinal    	21
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			quidu      	"5624D7B600AB"
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"5612DAB00133"
@@ -1075,7 +1381,1383 @@
 		max_width  	21600
 		origin_x   	0
 		origin_y   	0
-		items      	(list diagram_item_list))))
+		items      	(list diagram_item_list))
+	    (object InteractionDiagram "NewDiagram"
+		mechanism_ref 	@40
+		quid       	"5624D2E40104"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	1495
+		items      	(list diagram_item_list
+		    (object InterObjView "$UNNAMED$24" @41
+			location   	(141, 556)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@41
+			    location   	(141, 578)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	360
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5624D3EA01F0"
+			width      	120
+			height     	3216
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @42
+			    location   	(141, 631)
+			    line_color 	3342489
+			    InterObjView 	@41
+			    height     	3051
+			    y_coord    	2961
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @43
+			    location   	(141, 1579)
+			    line_color 	3342489
+			    InterObjView 	@41
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @44
+			    location   	(141, 2683)
+			    line_color 	3342489
+			    InterObjView 	@41
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @45
+			    location   	(141, 3582)
+			    line_color 	3342489
+			    InterObjView 	@41
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE))
+		    (object InterObjView "Main Page" @46
+			location   	(980, 557)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@46
+			    location   	(980, 557)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Main Page")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5624D5E8036C"
+			width      	300
+			height     	3215
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @47
+			    location   	(980, 632)
+			    line_color 	3342489
+			    InterObjView 	@46
+			    height     	167
+			    y_coord    	77
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @48
+			    location   	(980, 739)
+			    line_color 	3342489
+			    InterObjView 	@46
+			    height     	1268
+			    y_coord    	1178
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @49
+			    location   	(980, 1369)
+			    line_color 	3342489
+			    InterObjView 	@46
+			    height     	300
+			    y_coord    	210
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @50
+			    location   	(980, 1947)
+			    line_color 	3342489
+			    InterObjView 	@46
+			    height     	1635
+			    y_coord    	1545
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @51
+			    location   	(980, 2578)
+			    line_color 	3342489
+			    InterObjView 	@46
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @52
+			    location   	(980, 2847)
+			    line_color 	3342489
+			    InterObjView 	@46
+			    height     	195
+			    y_coord    	105
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @53
+			    location   	(980, 3477)
+			    line_color 	3342489
+			    InterObjView 	@46
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE))
+		    (object InterObjView "MainPageController" @54
+			location   	(1685, 550)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@54
+			    location   	(1685, 550)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"MainPageController")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5624D730020A"
+			width      	300
+			height     	3222
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @55
+			    location   	(1685, 625)
+			    line_color 	3342489
+			    InterObjView 	@54
+			    height     	414
+			    y_coord    	324
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @56
+			    location   	(1685, 844)
+			    line_color 	3342489
+			    InterObjView 	@54
+			    height     	1734
+			    y_coord    	1644
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @57
+			    location   	(1685, 1264)
+			    line_color 	3342489
+			    InterObjView 	@54
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @58
+			    location   	(1685, 2052)
+			    line_color 	3342489
+			    InterObjView 	@54
+			    height     	1425
+			    y_coord    	1335
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @59
+			    location   	(1685, 2473)
+			    line_color 	3342489
+			    InterObjView 	@54
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @60
+			    location   	(1685, 2952)
+			    line_color 	3342489
+			    InterObjView 	@54
+			    height     	195
+			    y_coord    	105
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @61
+			    location   	(1685, 3372)
+			    line_color 	3342489
+			    InterObjView 	@54
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE))
+		    (object InterObjView "$UNNAMED$25" @62
+			location   	(3232, 570)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@62
+			    location   	(3232, 592)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	360
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5624D3FC0070"
+			width      	120
+			height     	3202
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @63
+			    location   	(3232, 645)
+			    line_color 	3342489
+			    InterObjView 	@62
+			    height     	469
+			    y_coord    	379
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @64
+			    location   	(3232, 1054)
+			    line_color 	3342489
+			    InterObjView 	@62
+			    height     	1269
+			    y_coord    	1179
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @65
+			    location   	(3232, 2263)
+			    line_color 	3342489
+			    InterObjView 	@62
+			    height     	1004
+			    y_coord    	914
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @66
+			    location   	(3232, 3162)
+			    line_color 	3342489
+			    InterObjView 	@62
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE))
+		    (object InterObjView "Yt Client" @67
+			location   	(2305, 550)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@67
+			    location   	(2305, 550)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Yt Client")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5624D7FA0137"
+			width      	300
+			height     	3222
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @68
+			    location   	(2305, 625)
+			    line_color 	3342489
+			    InterObjView 	@67
+			    height     	1728
+			    y_coord    	1638
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @69
+			    location   	(2305, 949)
+			    line_color 	3342489
+			    InterObjView 	@67
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @70
+			    location   	(2305, 1159)
+			    line_color 	3342489
+			    InterObjView 	@67
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @71
+			    location   	(2305, 2157)
+			    line_color 	3342489
+			    InterObjView 	@67
+			    height     	1215
+			    y_coord    	1125
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @72
+			    location   	(2305, 2368)
+			    line_color 	3342489
+			    InterObjView 	@67
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @73
+			    location   	(2305, 3057)
+			    line_color 	3342489
+			    InterObjView 	@67
+			    height     	310
+			    y_coord    	220
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @74
+			    location   	(2305, 3267)
+			    line_color 	3342489
+			    InterObjView 	@67
+			    height     	1
+			    y_coord    	-89
+			    Nested     	TRUE))
+		    (object InterMessView "Select music style" @75
+			location   	(559, 739)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @76
+			    Parent_View 	@75
+			    location   	(558, 696)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5624D63D01CB"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	358
+			    justify    	0
+			    label      	"Select music style"
+			    pctDist    	0.498141
+			    height     	44
+			    orientation 	0)
+			line_color 	3342489
+			client     	@41
+			supplier   	@46
+			Focus_Src  	@42
+			Focus_Entry 	@48
+			origin     	(156, 739)
+			terminus   	(964, 739)
+			ordinal    	0)
+		    (object InterMessView "" @77
+			location   	(560, 1579)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @78
+			    Parent_View 	@77
+			    location   	(561, 1535)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5624D65C031A"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	54
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@46
+			supplier   	@41
+			Focus_Src  	@49
+			Focus_Entry 	@43
+			origin     	(964, 1579)
+			terminus   	(157, 1579)
+			ordinal    	7)
+		    (object InterMessView "Send style name to Controller" @79
+			location   	(1218, 844)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @80
+			    Parent_View 	@79
+			    location   	(1332, 807)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5624D8E3008E"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	560
+			    justify    	0
+			    label      	"Send style name to Controller"
+			    pctDist    	0.501071
+			    height     	38
+			    orientation 	0)
+			line_color 	3342489
+			client     	@46
+			supplier   	@54
+			Focus_Src  	@48
+			Focus_Entry 	@56
+			origin     	(995, 844)
+			terminus   	(1669, 844)
+			ordinal    	1)
+		    (object InterMessView "" @81
+			location   	(0, 1369)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @82
+			    Parent_View 	@81
+			    location   	(1333, 1325)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5624D9E403C3"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	54
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@54
+			supplier   	@46
+			Focus_Src  	@56
+			Focus_Entry 	@49
+			origin     	(1669, 1369)
+			terminus   	(996, 1369)
+			ordinal    	6)
+		    (object InterMessView "Send style name to Yt Client" @83
+			location   	(0, 949)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @84
+			    Parent_View 	@83
+			    location   	(1994, 905)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255A540349"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	528
+			    justify    	0
+			    label      	"Send style name to Yt Client"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@54
+			supplier   	@67
+			Focus_Src  	@55
+			Focus_Entry 	@69
+			origin     	(1700, 949)
+			terminus   	(2289, 949)
+			ordinal    	2)
+		    (object InterMessView "Request for common channel with selected music style" @85
+			location   	(0, 1054)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @86
+			    Parent_View 	@85
+			    location   	(2778, 1002)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255B050218"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	978
+			    justify    	0
+			    label      	"Request for common channel with selected music style"
+			    pctDist    	0.512255
+			    height     	53
+			    orientation 	0)
+			line_color 	3342489
+			client     	@67
+			supplier   	@62
+			Focus_Src  	@68
+			Focus_Entry 	@64
+			origin     	(2320, 1054)
+			terminus   	(3216, 1054)
+			ordinal    	3)
+		    (object InterMessView "" @87
+			location   	(0, 1159)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @88
+			    Parent_View 	@87
+			    location   	(2769, 1115)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255B4C03BB"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@62
+			supplier   	@67
+			Focus_Src  	@64
+			Focus_Entry 	@70
+			origin     	(3216, 1159)
+			terminus   	(2321, 1159)
+			ordinal    	4)
+		    (object InterMessView "" @89
+			location   	(0, 1264)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @90
+			    Parent_View 	@89
+			    location   	(1995, 1220)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255B6303C3"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	54
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@67
+			supplier   	@54
+			Focus_Src  	@68
+			Focus_Entry 	@57
+			origin     	(2289, 1264)
+			terminus   	(1701, 1264)
+			ordinal    	5)
+		    (object InterMessView "Explore popular music button clicked" @91
+			location   	(0, 1947)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @92
+			    Parent_View 	@91
+			    location   	(558, 1904)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255BC703A5"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	676
+			    justify    	0
+			    label      	"Explore popular music button clicked"
+			    pctDist    	0.498762
+			    height     	44
+			    orientation 	0)
+			line_color 	3342489
+			client     	@41
+			supplier   	@46
+			Focus_Src  	@42
+			Focus_Entry 	@50
+			origin     	(156, 1947)
+			terminus   	(964, 1947)
+			ordinal    	8)
+		    (object InterMessView "Send action to Controller" @93
+			location   	(0, 2052)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @94
+			    Parent_View 	@93
+			    location   	(1333, 2007)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255BE60088"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	500
+			    justify    	0
+			    label      	"Send action to Controller"
+			    pctDist    	0.502967
+			    height     	46
+			    orientation 	0)
+			line_color 	3342489
+			client     	@46
+			supplier   	@54
+			Focus_Src  	@50
+			Focus_Entry 	@58
+			origin     	(995, 2052)
+			terminus   	(1669, 2052)
+			ordinal    	9)
+		    (object InterMessView "Request for getting popular channel videos" @95
+			location   	(0, 2157)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @96
+			    Parent_View 	@95
+			    location   	(1994, 2113)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255C16022A"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	810
+			    justify    	0
+			    label      	"Request for getting popular channel videos"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@54
+			supplier   	@67
+			Focus_Src  	@58
+			Focus_Entry 	@71
+			origin     	(1700, 2157)
+			terminus   	(2289, 2157)
+			ordinal    	10)
+		    (object InterMessView "" @97
+			location   	(0, 2473)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @98
+			    Parent_View 	@97
+			    location   	(1995, 2429)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255C3E0189"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	76
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@67
+			supplier   	@54
+			Focus_Src  	@71
+			Focus_Entry 	@59
+			origin     	(2289, 2473)
+			terminus   	(1701, 2473)
+			ordinal    	13)
+		    (object InterMessView "Request for getting popular channel videos" @99
+			location   	(0, 2263)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @100
+			    Parent_View 	@99
+			    location   	(2768, 2219)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255CB002C1"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	798
+			    justify    	0
+			    label      	"Request for getting popular channel videos"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@67
+			supplier   	@62
+			Focus_Src  	@68
+			Focus_Entry 	@65
+			origin     	(2320, 2263)
+			terminus   	(3216, 2263)
+			ordinal    	11)
+		    (object InterMessView "" @101
+			location   	(0, 2368)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @102
+			    Parent_View 	@101
+			    location   	(2769, 2324)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255CE00338"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@62
+			supplier   	@67
+			Focus_Src  	@65
+			Focus_Entry 	@72
+			origin     	(3216, 2368)
+			terminus   	(2321, 2368)
+			ordinal    	12)
+		    (object InterMessView "" @103
+			location   	(0, 2578)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @104
+			    Parent_View 	@103
+			    location   	(1333, 2534)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255CF20304"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	76
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@54
+			supplier   	@46
+			Focus_Src  	@56
+			Focus_Entry 	@51
+			origin     	(1669, 2578)
+			terminus   	(996, 2578)
+			ordinal    	14)
+		    (object InterMessView "" @105
+			location   	(0, 2683)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @106
+			    Parent_View 	@105
+			    location   	(561, 2639)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255D0D0170"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	76
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@46
+			supplier   	@41
+			Focus_Src  	@50
+			Focus_Entry 	@44
+			origin     	(964, 2683)
+			terminus   	(157, 2683)
+			ordinal    	15)
+		    (object InterMessView "" @107
+			location   	(0, 3582)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @108
+			    Parent_View 	@107
+			    location   	(561, 3538)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255DC6036D"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@46
+			supplier   	@41
+			Focus_Src  	@50
+			Focus_Entry 	@45
+			origin     	(964, 3582)
+			terminus   	(157, 3582)
+			ordinal    	23)
+		    (object InterMessView "Enter clip name for searching" @109
+			location   	(0, 2847)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @110
+			    Parent_View 	@109
+			    location   	(558, 2803)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255DCF03AE"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	574
+			    justify    	0
+			    label      	"Enter clip name for searching"
+			    pctDist    	0.498762
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@41
+			supplier   	@46
+			Focus_Src  	@42
+			Focus_Entry 	@52
+			origin     	(156, 2847)
+			terminus   	(964, 2847)
+			ordinal    	16)
+		    (object InterMessView "" @111
+			location   	(0, 3477)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @112
+			    Parent_View 	@111
+			    location   	(1333, 3522)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255E6B00C5"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@54
+			supplier   	@46
+			Focus_Src  	@58
+			Focus_Entry 	@53
+			origin     	(1669, 3477)
+			terminus   	(996, 3477)
+			ordinal    	22)
+		    (object InterMessView "Send name to Controller" @113
+			location   	(0, 2952)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @114
+			    Parent_View 	@113
+			    location   	(1332, 2909)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255E720141"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	487
+			    justify    	0
+			    label      	"Send name to Controller"
+			    pctDist    	0.500000
+			    height     	44
+			    orientation 	0)
+			line_color 	3342489
+			client     	@46
+			supplier   	@54
+			Focus_Src  	@52
+			Focus_Entry 	@60
+			origin     	(995, 2952)
+			terminus   	(1669, 2952)
+			ordinal    	17)
+		    (object InterMessView "" @115
+			location   	(0, 3372)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @116
+			    Parent_View 	@115
+			    location   	(1995, 3328)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255E8600B9"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@67
+			supplier   	@54
+			Focus_Src  	@71
+			Focus_Entry 	@61
+			origin     	(2289, 3372)
+			terminus   	(1701, 3372)
+			ordinal    	21)
+		    (object InterMessView "Send name to Yt Client" @117
+			location   	(0, 3057)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @118
+			    Parent_View 	@117
+			    location   	(1994, 3013)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255E9102AD"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	465
+			    justify    	0
+			    label      	"Send name to Yt Client"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@54
+			supplier   	@67
+			Focus_Src  	@60
+			Focus_Entry 	@73
+			origin     	(1700, 3057)
+			terminus   	(2289, 3057)
+			ordinal    	18)
+		    (object InterMessView "" @119
+			location   	(0, 3267)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @120
+			    Parent_View 	@119
+			    location   	(2769, 3223)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255EB0005F"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	""
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@62
+			supplier   	@67
+			Focus_Src  	@65
+			Focus_Entry 	@74
+			origin     	(3216, 3267)
+			terminus   	(2321, 3267)
+			ordinal    	20)
+		    (object InterMessView "Request for searching common clip" @121
+			location   	(0, 3162)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @122
+			    Parent_View 	@121
+			    location   	(2768, 3118)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"56255EC20303"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	675
+			    justify    	0
+			    label      	"Request for searching common clip"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@67
+			supplier   	@62
+			Focus_Src  	@73
+			Focus_Entry 	@66
+			origin     	(2320, 3162)
+			terminus   	(3216, 3162)
+			ordinal    	19)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5612DAAC03DC"
 	physical_models 	(list unit_reference_list)
@@ -1090,12 +2772,12 @@
 		origin_y   	0
 		items      	(list diagram_item_list)))
 	category   	"Logical View"
-	quidu      	"5612DAAC03DA")
+	quidu      	"56254977038C")
     process_structure 	(object Processes
-	quid       	"5612DAAC03DD"
+	quid       	"5624CA24010F"
 	ProcsNDevs 	(list
 	    (object Process_Diagram "Deployment View"
-		quid       	"5612DAAC03DF"
+		quid       	"5624CA240111"
 		title      	"Deployment View"
 		zoom       	100
 		max_height 	28350
@@ -1224,7 +2906,7 @@
 		    (object Attribute
 			tool       	"Cplusplus"
 			name       	"NamespaceBraceStyle"
-			value      	("BraceStyleSet" 1))
+			value      	("BraceStyleSet" 2))
 		    (object Attribute
 			tool       	"Cplusplus"
 			name       	"ClassBraceStyle"
@@ -1233,10 +2915,6 @@
 			tool       	"Cplusplus"
 			name       	"FunctionBraceStyle"
 			value      	("BraceStyleSet" 2))
-		    (object Attribute
-			tool       	"Cplusplus"
-			name       	"CommentStyleProperty"
-			value      	("CommentStyleSet" 1))
 		    (object Attribute
 			tool       	"Cplusplus"
 			name       	"Copyright"
@@ -1285,26 +2963,6 @@
 				tool       	"Cplusplus"
 				name       	"Lower case with underscores"
 				value      	3)))
-		    (object Attribute
-			tool       	"Cplusplus"
-			name       	"CommentStyleSet"
-			value      	(list Attribute_Set
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"C++ Comment"
-				value      	1)
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"C Comment"
-				value      	2)
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"XML Comment"
-				value      	3)
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"JavaDoc Comment"
-				value      	4)))
 		    (object Attribute
 			tool       	"Cplusplus"
 			name       	"BraceStyleSet"
@@ -1384,6 +3042,30 @@
 			    (object Attribute
 				tool       	"Cplusplus"
 				name       	"Never synchronize"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleProperty"
+			value      	("CommentStyleSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C++ Comment"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C Comment"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"XML Comment"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"JavaDoc Comment"
 				value      	4)))))
 	    (object Attribute
 		tool       	"Cplusplus"
@@ -1487,10 +3169,6 @@
 			value      	("BraceStyleSet" 2))
 		    (object Attribute
 			tool       	"Cplusplus"
-			name       	"CommentStyleProperty"
-			value      	("CommentStyleSet" 1))
-		    (object Attribute
-			tool       	"Cplusplus"
 			name       	"Copyright"
 			value      	(value Text ""))
 		    (object Attribute
@@ -1537,26 +3215,6 @@
 				tool       	"Cplusplus"
 				name       	"Lower case with underscores"
 				value      	3)))
-		    (object Attribute
-			tool       	"Cplusplus"
-			name       	"CommentStyleSet"
-			value      	(list Attribute_Set
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"C++ Comment"
-				value      	1)
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"C Comment"
-				value      	2)
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"XML Comment"
-				value      	3)
-			    (object Attribute
-				tool       	"Cplusplus"
-				name       	"JavaDoc Comment"
-				value      	4)))
 		    (object Attribute
 			tool       	"Cplusplus"
 			name       	"BraceStyleSet"
@@ -1636,6 +3294,30 @@
 			    (object Attribute
 				tool       	"Cplusplus"
 				name       	"Never synchronize"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleProperty"
+			value      	("CommentStyleSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C++ Comment"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C Comment"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"XML Comment"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"JavaDoc Comment"
 				value      	4)))))
 	    (object Attribute
 		tool       	"Cplusplus"
@@ -1750,6 +3432,1888 @@
 		name       	"HiddenTool"
 		value      	FALSE)
 	    (object Attribute
+		tool       	"Ada83"
+		name       	"propertyId"
+		value      	"838326200")
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SpecFileExtension"
+			value      	"1.ada")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SpecFileBackupExtension"
+			value      	"1.ad~")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SpecFileTemporaryExtension"
+			value      	"1.ad#")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"BodyFileExtension"
+			value      	"2.ada")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"BodyFileBackupExtension"
+			value      	"2.ad~")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"BodyFileTemporaryExtension"
+			value      	"2.ad#")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateBodies"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DefaultCodeBody"
+			value      	"[statement]")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CommentWidth"
+			value      	60)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ErrorLimit"
+			value      	30)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"UseFileName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Directory"
+			value      	"$ROSEADA83_SOURCE")))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassName"
+			value      	"Object")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassAccess"
+			value      	("ImplementationSet" 43))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplementationType"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsSubtype"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"PolymorphicUnit"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"HandleName"
+			value      	"Handle")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"HandleAccess"
+			value      	("ImplementationSet" 45))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Discriminant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Variant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"EnumerationLiteralPrefix"
+			value      	"A_")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"RecordFieldPrefix"
+			value      	"The_")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassParameterName"
+			value      	"This")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DefaultConstructorKind"
+			value      	("ConstructorKindSet" 199))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DefaultConstructorName"
+			value      	"Create")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineDefaultConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyConstructorKind"
+			value      	("ConstructorKindSet" 199))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyConstructorName"
+			value      	"Copy")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineCopyConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DestructorName"
+			value      	"Free")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineDestructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassEqualityOperation"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"HandleEqualityOperation"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineEquality"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsTask"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Private"
+				value      	43)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"LimitedPrivate"
+				value      	200)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ConstructorKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenericFormalParameters"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsSubunit"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SubprogramImplementation"
+			value      	("SubprogramImplementationSet" 2))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Renames"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassParameterMode"
+			value      	("ParameterModeSet" 203))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Inline"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"EntryCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ExitCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialCodeBody"
+			value      	"${default}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SubprogramImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Spec"
+				value      	224)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Body"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Renaming"
+				value      	222)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Separate"
+				value      	223)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"InOut"
+				value      	203)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"FunctionReturn"
+				value      	206)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Mode"
+			value      	("ParameterModeSet" 232))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"InOut"
+				value      	203)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Has"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"NameIfUnlabeled"
+			value      	"The_${supplier}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DataMemberName"
+			value      	"${relationship}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${relationship}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${relationship}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Variant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"After"
+				value      	234)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DataMemberName"
+			value      	"${attribute}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${attribute}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${attribute}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Variant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"After"
+				value      	234)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Association"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${association}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${association}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateAssociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AssociateName"
+			value      	"Associate")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineAssociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateDissociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DissociateName"
+			value      	"Dissociate")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineDissociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DataMemberName"
+			value      	"${target}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${target}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${target}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"After"
+				value      	234)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Subsystem"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Directory"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"propertyId"
+		value      	"838326200")
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SpecFileExtension"
+			value      	"1.ada")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SpecFileBackupExtension"
+			value      	"1.ad~")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SpecFileTemporaryExtension"
+			value      	"1.ad#")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"BodyFileExtension"
+			value      	"2.ada")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"BodyFileBackupExtension"
+			value      	"2.ad~")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"BodyFileTemporaryExtension"
+			value      	"2.ad#")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"UseColonNotation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateBodies"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DefaultCodeBody"
+			value      	"[statement]")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CommentWidth"
+			value      	60)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ErrorLimit"
+			value      	30)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"UseFileName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Directory"
+			value      	"$ROSEADA95_SOURCE")))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeName"
+			value      	"Object")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeVisibility"
+			value      	("TypeVisibilitySet" 43))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeImplementation"
+			value      	("TypeImplementationSet" 208))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IncompleteType"
+			value      	("IncompleteTypeSet" 1))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControl"
+			value      	("TypeControlSet" 225))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControlName"
+			value      	"Controlled_${type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControlVisibility"
+			value      	("TypeVisibilitySet" 43))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeDefinition"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordImplementation"
+			value      	("RecordImplementationSet" 209))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordKindPackageName"
+			value      	"${class}_Record_Kinds")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsLimited"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsSubtype"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessType"
+			value      	("GenerateAccessTypeSet" 230))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessTypeName"
+			value      	"Handle")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessTypeVisibility"
+			value      	("TypeVisibilitySet" 45))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessTypeDefinition"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessClassWide"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"MaybeAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterizedImplementation"
+			value      	("ParameterizedImplementationSet" 11))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParentClassName"
+			value      	"Superclass")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"EnumerationLiteralPrefix"
+			value      	"A_")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldPrefix"
+			value      	"The_")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ArrayOfTypeName"
+			value      	"Array_Of_${type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessArrayOfTypeName"
+			value      	"Access_Array_Of_${type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ArrayOfAccessTypeName"
+			value      	"Array_Of_${access_type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessArrayOfAccessTypeName"
+			value      	"Access_Array_Of_${access_type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ArrayIndexDefinition"
+			value      	"Positive range <>")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameterName"
+			value      	"This")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateDefaultConstructor"
+			value      	("SubprogramKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DefaultConstructorName"
+			value      	"Create")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineDefaultConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateCopyConstructor"
+			value      	("SubprogramKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CopyConstructorName"
+			value      	"Copy")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineCopyConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateDestructor"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DestructorName"
+			value      	"Free")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineDestructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateTypeEquality"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeEqualityName"
+			value      	(value Text 
+|"="
+			))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineEquality"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Tagged"
+				value      	208)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Record"
+				value      	210)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Mixin"
+				value      	211)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Protected"
+				value      	44)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Task"
+				value      	212)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IncompleteTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotDeclare"
+				value      	1)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"NoDiscriminantPart"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"UnknownDiscriminantPart"
+				value      	3)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"KnownDiscriminantPart"
+				value      	4)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"SingleType"
+				value      	209)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"MultipleTypes"
+				value      	213)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterizedImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Generic"
+				value      	11)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Unconstrained"
+				value      	214)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeVisibilitySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Private"
+				value      	43)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SubprogramKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControlSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"None"
+				value      	225)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"InitializationOnly"
+				value      	226)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AssignmentFinalizationOnly"
+				value      	227)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"All"
+				value      	228)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Always"
+				value      	229)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Auto"
+				value      	230)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenericFormalParameters"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsPrivate"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsSubunit"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SubprogramImplementation"
+			value      	("SubprogramImplementationSet" 2))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Renames"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateOverriding"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameterMode"
+			value      	("ParameterModeSet" 203))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameterClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Inline"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"EntryCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ExitCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialCodeBody"
+			value      	"${default}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"EntryBarrierCondition"
+			value      	"True")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SubprogramImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Spec"
+				value      	224)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Body"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Abstract"
+				value      	221)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Renaming"
+				value      	222)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"RenamingAsBody"
+				value      	231)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Separate"
+				value      	223)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"InOut"
+				value      	203)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Access"
+				value      	220)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Mode"
+			value      	("ParameterModeSet" 232))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"InOut"
+				value      	203)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Access"
+				value      	220)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Has"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"NameIfUnlabeled"
+			value      	"The_${supplier}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementation"
+			value      	("RecordFieldImplementationSet" 216))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessDiscriminantClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldName"
+			value      	"${relationship}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessGet"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${relationship}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessSet"
+			value      	("ProcedureKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${relationship}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementation"
+			value      	("ContainerImplementationSet" 217))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"After"
+				value      	234)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Component"
+				value      	216)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Discriminant"
+				value      	218)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AccessDiscriminant"
+				value      	219)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Array"
+				value      	217)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Generic"
+				value      	11)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementation"
+			value      	("RecordFieldImplementationSet" 216))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessDiscriminantClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldName"
+			value      	"${attribute}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessGet"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${attribute}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessSet"
+			value      	("ProcedureKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${attribute}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"After"
+				value      	234)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Component"
+				value      	216)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Discriminant"
+				value      	218)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AccessDiscriminant"
+				value      	219)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Association"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${association}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${association}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAssociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AssociateName"
+			value      	"Associate")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineAssociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateDissociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DissociateName"
+			value      	"Dissociate")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineDissociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementation"
+			value      	("RecordFieldImplementationSet" 216))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessDiscriminantClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldName"
+			value      	"${target}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessGet"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${target}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessSet"
+			value      	("ProcedureKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${target}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementation"
+			value      	("ContainerImplementationSet" 217))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"After"
+				value      	234)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Component"
+				value      	216)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Discriminant"
+				value      	218)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AccessDiscriminant"
+				value      	219)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Array"
+				value      	217)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Generic"
+				value      	11)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Subsystem"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Directory"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
 		tool       	"CORBA"
 		name       	"propertyId"
 		value      	"809135966")
@@ -1791,6 +5355,10 @@
 			value      	"")
 		    (object Attribute
 			tool       	"CORBA"
+			name       	"FundamentalTypes"
+			value      	"short; long; long long; unsigned short; unsigned long; unsigned long long; float; double; long double; char; boolean; wchar; octet; any;string; wstring; sequence; fixed; Object")
+		    (object Attribute
+			tool       	"CORBA"
 			name       	"GenerateRoseID"
 			value      	TRUE)
 		    (object Attribute
@@ -1816,11 +5384,7 @@
 		    (object Attribute
 			tool       	"CORBA"
 			name       	"BraceOnNewLine"
-			value      	FALSE)
-		    (object Attribute
-			tool       	"CORBA"
-			name       	"FundamentalTypes"
-			value      	"short; long; long long; unsigned short; unsigned long; unsigned long long; float; double; long double; char; boolean; wchar; octet; any;string; wstring; sequence; fixed; Object")))
+			value      	FALSE)))
 	    (object Attribute
 		tool       	"CORBA"
 		name       	"default__Class"
@@ -2819,10 +6383,6 @@
 			value      	FALSE)
 		    (object Attribute
 			tool       	"Java"
-			name       	"JavadocExceptionTag"
-			value      	"@throws")
-		    (object Attribute
-			tool       	"Java"
 			name       	"BeanPrefix"
 			value      	"")
 		    (object Attribute
@@ -2908,7 +6468,11 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"FundamentalType"
-			value      	"boolean; char; byte; short; int; long; float; double; Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; java.util.AbstractCollection; java.util.AbstractList;java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap;int; float; boolean; char; double; short; long; byte; ;Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; ;java.util.AbstractCollection; java.util.AbstractList; java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.ArrayList; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap; ")))
+			value      	"boolean; char; byte; short; int; long; float; double; Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; java.util.AbstractCollection; java.util.AbstractList;java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocExceptionTag"
+			value      	"@throws")))
 	    (object Attribute
 		tool       	"Java"
 		name       	"default__Class"
@@ -3759,6 +7323,10 @@
 			value      	"")))
 	    (object Attribute
 		tool       	"Oracle8"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"ComponentTest"
 		name       	"HiddenTool"
 		value      	FALSE)
 	    (object Attribute
@@ -4638,6 +8206,18 @@
 		value      	(list Attribute_Set
 		    (object Attribute
 			tool       	"VC++"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"VC++"
+			name       	"Inline"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"VC++"
+			name       	"DefaultBody"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"VC++"
 			name       	"GenerateSet"
 			value      	(list Attribute_Set
 			    (object Attribute
@@ -4651,25 +8231,253 @@
 			    (object Attribute
 				tool       	"VC++"
 				name       	"DeclareOnly"
-				value      	402)))
-		    (object Attribute
-			tool       	"VC++"
-			name       	"Generate"
-			value      	("GenerateSet" 401))
-		    (object Attribute
-			tool       	"VC++"
-			name       	"Inline"
-			value      	FALSE)
-		    (object Attribute
-			tool       	"VC++"
-			name       	"DefaultBody"
-			value      	(value Text ""))))
+				value      	402)))))
 	    (object Attribute
 		tool       	"VC++"
 		name       	"HiddenTool"
 		value      	FALSE)
 	    (object Attribute
 		tool       	"Version Control"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"propertyId"
+		value      	"783606378")
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateModel"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"InstancingSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Private"
+				value      	221)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"PublicNotCreatable"
+				value      	213)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"SingleUse"
+				value      	214)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"GlobalSingleUse"
+				value      	215)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"MultiUse"
+				value      	219)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"GlobalMultiUse"
+				value      	220)))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"BaseSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"(none)"
+				value      	222)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"0"
+				value      	223)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"1"
+				value      	224)))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionBase"
+			value      	("BaseSet" 222))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionExplicit"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionCompare"
+			value      	("CompareSet" 202))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Instancing"
+			value      	("InstancingSet" 219))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"CompareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"(none)"
+				value      	202)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Binary"
+				value      	203)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Text"
+				value      	204)))))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"LibraryName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"AliasName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"IsStatic"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProcedureID"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ReplaceExistingBody"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"DefaultBody"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"New"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"WithEvents"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProcedureID"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"PropertyName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Subscript"
+			value      	"")))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"New"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"WithEvents"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"FullName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProcedureID"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"PropertyName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Subscript"
+			value      	"")))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Inherit"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ImplementsDelegation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"FullName"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ByVal"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ByRef"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Optional"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ParamArray"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProjectFile"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateModel"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ImportReferences"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"QuickImport"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ImportBinary"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
 		name       	"HiddenTool"
 		value      	FALSE)
 	    (object Attribute
@@ -4772,4 +8580,4 @@
 		tool       	"XML_DTD"
 		name       	"HiddenTool"
 		value      	FALSE))
-	quid       	"5612DAAC03DE"))
+	quid       	"5624CA240110"))
