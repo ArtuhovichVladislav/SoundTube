@@ -12,7 +12,13 @@ class VideoController < ApplicationController
 	def video
 		@channel = VideoController.new
 		@playlists = @channel.playlists
-		@items
+		@items_collection = []
+		@playlists.each do |playlist|
+			@channel.get_playlist_videos(playlist.id).each do |item| 
+				@items_collection.push(@channel.get_video_link(item.video_id))
+			end
+		end
+		@items_collection
 	end
 
 	def playlists
@@ -26,7 +32,6 @@ class VideoController < ApplicationController
 	end
 
 	def get_video_link (video_id)
-		#'https://www.youtube.com/watch?v=' + 
 		video_id 
 	end
 end

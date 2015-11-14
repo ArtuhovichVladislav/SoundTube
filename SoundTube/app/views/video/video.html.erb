@@ -10,18 +10,15 @@ end-->
     <!-- style Grid Section -->
     <section class="bg-light-gray">
     <div class="container">
-        <% @playlists.each do |playlist| %>
-            <% @channel.get_playlist_videos(playlist.id).each do |item| %>
-                <% @video_id = @channel.get_video_link(item.video_id) %>                
+            <% @items_collection.each do |video_id| %>               
                 <div class="col-md-3">
                     <div class="embed-responsive embed-responsive-4by3">
                         <iframe class="embed-responsive-item" src= "//www.youtube.com/embed/<%= @video_id %>"></iframe>
                     </div>
-                    <h5><%= item.title.first(50)+"..." %></h5>
+            
                     <br>
                 </div> 
-            <% end %>    
-        <% end %>  
+            <% end %>     
     </div>  
 
     </section>
