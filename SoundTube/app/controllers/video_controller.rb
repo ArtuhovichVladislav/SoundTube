@@ -18,7 +18,12 @@ class VideoController < ApplicationController
 				@items_collection.push(@channel.get_video_link(item.video_id))
 			end
 		end
-		@items_collection
+		@items = Kaminari.paginate_array(@items_collection).page(params[:page]).per(5)
+		puts @items 
+		respond_to do |format|
+			format.js
+			format.html
+		end
 	end
 
 	def playlists

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="css/bootstrap.css" rel="stylesheet">
 <body>
 
 <!--video_controller.playlists.each do |playlist|
@@ -8,18 +9,18 @@
     end
 end-->
     <!-- style Grid Section -->
+    <div class="ajax-progress"></div>
     <section class="bg-light-gray">
     <div class="container">
-            <% @items_collection.each do |video_id| %>               
-                <div class="col-md-3">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src= "//www.youtube.com/embed/<%= @video_id %>"></iframe>
-                    </div>
-            
-                    <br>
-                </div> 
-            <% end %>     
-    </div>  
+      <div class="content">
+        <div id="paginator">
+            <%= paginate @items, :remote => true %>
+        </div>
+        <div id="items">
+            <%= render 'items' %>
+        </div>
+      </div>    
+    </div>
 
     </section>
     <!-- jQuery -->
