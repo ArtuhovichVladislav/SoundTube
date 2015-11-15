@@ -1,0 +1,50 @@
+div.ajax-progress {
+  position: fixed;
+  display: none;
+  width: 150px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  background-image: url('ajax-loader.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pagination a, .pagination span.current, .pagination span.gap {
+    float: left;
+    padding: 0 14px;
+    line-height: 38px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-left-width: 0;
+}
+
+.pagination {
+    border-left: 1px solid #ddd;
+    .first{
+        display: none;
+    }
+    .prev {
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .page{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .next{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .last{
+        display: none;
+    }
+}
+
+.style-header {
+  background-image: url(../assets/header-bg1.jpg);
+}

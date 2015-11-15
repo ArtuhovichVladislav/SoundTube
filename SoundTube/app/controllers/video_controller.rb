@@ -4,42 +4,31 @@ Yt.configure do |config|
 end
 
 class VideoController < ApplicationController
-	def new(channel_id = 'UCTj_JsfOlH4rHsREPkWxnzg')
-		@channel = Yt::Channel.new id: channel_id
-		@channel
-	end 
 
-	def video
-		@channel = VideoController.new
+  def show
+    @channel = Yt::Channel.new id: params[:id]
 		@playlists = @channel.playlists
 		@items_collection = []
+    c = 0
 		@playlists.each do |playlist|
-			@channel.get_playlist_videos(playlist.id).each do |item| 
-				@items_collection.push(@channel.get_video_link(item.video_id))
+      break if c > 1
+      c += 1
+			get_playlist_videos(playlist.id).each do |item|
+				@items_collection.push item.video_id
+        print item.video_id
 			end
 		end
-		@items = Kaminari.paginate_array(@items_collection).page(params[:page]).per(5)
-		puts @items 
+		@items = Kaminari.paginate_array(@items_collection).page(params[:page]).per(20)
+		puts @items
 		respond_to do |format|
 			format.js
 			format.html
 		end
-	end
-
-	def playlists
-		@channel = self.new
-		@channel.playlists
-	end
+  end
 
 	def get_playlist_videos (playlist_id)
     playlist = Yt::Playlist.new id: playlist_id
     playlist.playlist_items
 	end
 
-	def get_video_link (video_id)
-		video_id 
-	end
 end
-
-
-

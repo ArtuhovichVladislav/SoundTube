@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="css/bootstrap.css" rel="stylesheet">
+<body>
+
+  <header class="style-header">
+      <div class="container">
+          <div class="intro-text">
+              <div class="intro-heading" align="left">Explore popular this week</div>
+          </div>
+      </div>
+  </header>
+    <!-- style Grid Section -->
+    <div class="ajax-progress"></div>
+    <section class="bg-light-gray">
+    <div class="container">
+      <div class="content">
+        <div id="items">
+            <%= render 'items' %>
+        </div>
+        <div class="pagination">
+          <div id="paginator">
+              <%= paginate @items, :remote => true %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>
