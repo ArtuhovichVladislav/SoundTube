@@ -1,11 +1,12 @@
 API_KEY = 'AIzaSyAOziHAdhr38lpl75KX8Qkbh7eGtxyWfPw'
 Yt.configure do |config|
   config.api_key = API_KEY
+  config.log_level = :debug
 end
 
 class ExploreController < ApplicationController
-  def show
-    @playlist = Yt::Playlist.new id: params[:id]
+  def index
+    @playlist = Yt::Playlist.new id: 'PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI'
     @items_collection = []
 		@playlist.playlist_items.each do |item|
 				@items_collection.push item.video_id

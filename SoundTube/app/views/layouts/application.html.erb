@@ -40,7 +40,6 @@
                     <span class="icon-bar"></span>
                 </button>
                 <%= link_to "SoundTube", root_path, class: "navbar-brand page-scroll" %>
-              <!--  <a class="navbar-brand page-scroll" href="#page-top">SoundTube</a>-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,14 +49,14 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll"  href="#style">Explore</a>
+                        <%= link_to "Explore", explore_index_path, :class=>"style-link" %>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#style">Styles</a>
+                        <%= link_to "Styles", root_path, :class=>"style-link"  %>
                     </li>
-                    <li>
+                  <!--  <li>
                         <a class="page-scroll" href="#search">Search<i class="fa fa-search-plus"></i></a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
